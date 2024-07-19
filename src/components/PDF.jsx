@@ -91,7 +91,6 @@ export default function PDF() {
                   key={`page_${index + 1}`}
                   pageNumber={index + 1}
                   height={1100}
-                  scale={2}
                   inputRef={pageRef}
                 />
               ))}
