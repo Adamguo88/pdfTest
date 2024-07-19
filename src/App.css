@@ -53,7 +53,7 @@
 }
 .read-PDF {
   position: relative;
-  max-height: 720px;
+  max-height: 500px;
 }
 .read-PDF-absolute {
   position: absolute;
@@ -80,7 +80,7 @@
   display: none !important;
 }
 .react-pdf__Document {
-  max-height: 720px !important;
+  max-height: 500px !important;
   width: 100%;
   text-align: center;
   overflow-y: scroll !important;

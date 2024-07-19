@@ -85,14 +85,7 @@ export default function PDF() {
             // onScroll={!!setIsReadPDF ? debounceCallBack : null}
           >
             {Array.from(new Array(isNumPages), (_, index) => (
-              <Page
-                className="bg-1"
-                loading={null}
-                key={`page_${index + 1}`}
-                pageNumber={index + 1}
-                scale={1.5}
-                inputRef={pageRef}
-              />
+              <Page className="bg-1" loading={null} key={`page_${index + 1}`} pageNumber={index + 1} height={1100} inputRef={pageRef} />
             ))}
           </Document>
         </div>
