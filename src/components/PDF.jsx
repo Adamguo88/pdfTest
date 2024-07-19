@@ -88,7 +88,6 @@ export default function PDF() {
               <Page
                 className="bg-1"
                 loading={null}
-                height={1440}
                 key={`page_${index + 1}`}
                 pageNumber={index + 1}
                 scale={1.5}
