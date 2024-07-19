@@ -85,29 +85,6 @@ export default function PDF() {
               inputRef={documentRef}
             >
               {Array.from(new Array(isNumPages), (_, index) => (
-                <Page
-                  className="bg-1"
-                  loading={null}
-                  key={`page_${index + 1}`}
-                  pageNumber={index + 1}
-                  height={1100}
-                  scale={2}
-                  inputRef={pageRef}
-                />
-              ))}
-            </Document>
-          </div>
-        </div>
-
-        <div className="width100 flex-center flex-column read-PDF">
-          <div className="pdf-document">
-            <Document
-              file={isPdfUrl}
-              loading={<div className="pdf-loading">載入中...</div>}
-              onLoadSuccess={onLoadSuccess}
-              inputRef={documentRef}
-            >
-              {Array.from(new Array(isNumPages), (_, index) => (
                 <Page className="bg-1" loading={null} key={`page_${index + 1}`} pageNumber={index + 1} scale={2} inputRef={pageRef} />
               ))}
             </Document>
