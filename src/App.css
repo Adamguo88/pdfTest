@@ -79,11 +79,14 @@
 .react-pdf__Page__annotations {
   display: none !important;
 }
-.react-pdf__Document {
+.pdf-document {
+  position: relative;
   max-height: 500px !important;
+  max-width: 900px;
   width: 100%;
   text-align: center;
   overflow-y: scroll !important;
+  background-color: white;
 }
 &::-webkit-scrollbar {
   height: 1px;
